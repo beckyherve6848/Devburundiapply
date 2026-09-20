@@ -132,14 +132,14 @@ export const translations = {
             sendEmail: "Rungika kuri email",
             sendWhatsapp: "Rungika kuri WhatsApp",
             submitting: "Tegura...",
-            required: "Iki kibazo Gisabwe",
+            required: "Usabwe kwandikamwo hano Ibisabwa",
             invalidEmail: "Munywanyi andika email y'ukuri",
             invalidPhone: "Munywanyi andika telefone y'ukuri",
         },
         success: {
             title: "Murakoze!",
             message: "Amakuru yawe yo kwiyandikisha yamaze kurungikwa.",
-            registerAnother: "Kwiyandikisha uyundi Munywanyi.",
+            registerAnother: "Fyonda Hano uyundi Munywanyi Yiyandikishe.",
         },
         whatsapp: {
             title: "Ifishi yo kwiyandikisha",
