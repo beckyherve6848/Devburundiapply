@@ -9,8 +9,8 @@ import RegistrationForm from "@/components/registration/RegistrationForm";
  * No backend. Pure client-side, instant language switching.
  */
 export default function Registration() {
-    const [lang, setLang] = useState(defaultLang);
-    const t = translations[lang];
+    const [lang, setLang] = useState(() => localStorage.getItem("devburundi_lang") || defaultLang);
+    const t = translations[lang] || translations[defaultLang];
 
     return (
         <div className="relative min-h-screen w-full overflow-hidden">

@@ -13,6 +13,7 @@ import Register from '@/pages/Register';
 import ForgotPassword from '@/pages/ForgotPassword';
 import ResetPassword from '@/pages/ResetPassword';
 import OAuthConsent from '@/pages/OAuthConsent';
+import PWAInstallPrompt from '@/components/pwa/PWAInstallPrompt';
 
 const AuthenticatedApp = () => {
     const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
@@ -64,6 +65,7 @@ function App() {
                     <AuthenticatedApp />
                 </Router>
                 <Toaster />
+                <PWAInstallPrompt />
             </QueryClientProvider>
         </AuthProvider>
     )

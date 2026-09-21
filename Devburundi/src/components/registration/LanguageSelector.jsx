@@ -45,6 +45,8 @@ export default function LanguageSelector({ current, onChange }) {
                             role="option"
                             aria-selected={lang.code === current}
                             onClick={() => {
+                                localStorage.setItem("devburundi_lang", lang.code);
+                                window.dispatchEvent(new CustomEvent("devburundi_lang_change", { detail: lang.code }));
                                 onChange(lang.code);
                                 setOpen(false);
                             }}
